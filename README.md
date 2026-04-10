@@ -20,8 +20,6 @@
 
 # Hardware Requirement 
 Camera, Screen.
-# Software Requirement
-Python, Media-Pipe, OpenCV, NumPy, Speech recognition.
 
 # Procedure
 1. A motion-to- digital converter, based on idea of drawing in air (like waving in air) focuses on hand gesture recognition with the use of computer vision using python programming language, creating a natural human-machine interaction. The system offers clear hand gestures for real-time system control (Synchronization). 
