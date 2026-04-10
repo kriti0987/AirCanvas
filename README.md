@@ -24,7 +24,6 @@ Camera, Screen.
 Python, Media-Pipe, OpenCV, NumPy, Speech recognition.
 
 # Procedure
-![image_alt](https://github.com/kriti0987/AirCanvas/blob/8e0a8c4ea0422447d1ea3200c9592e28b7e028f0/Screenshot%202026-03-21%20001649.png)
 1. A motion-to- digital converter, based on idea of drawing in air (like waving in air) focuses on hand gesture recognition with the use of computer vision using python programming language, creating a natural human-machine interaction. The system offers clear hand gestures for real-time system control (Synchronization). 
 
 2. The key requirements is the user must be on distance where it can be clearly visible to camera so that camera can take proper input. System captures user movements, allow drawing without keyboard, mouse, or touchpad, uses in virtual reality and hand movement recognition. Enabling more experimental and dynamic artwork, making it an ideal choice for creators. 
