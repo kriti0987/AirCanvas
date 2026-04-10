@@ -11,7 +11,7 @@
 # Objective
 1. Voice-to-text conversion through speech recognition.
 
-# Technology Used
+# Tech Stack
 1. Programming Language: Python
 2. Library: Numpy, Deque
 3. Machine Learning (ML) : Mediapipe
