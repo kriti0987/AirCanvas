@@ -1,26 +1,29 @@
 # AIR CANVAS (DRAW THROUGH HAND GESTURES)
-![image alt](https://github.com/kriti0987/AirCanvas/blob/e158ca2f4ade3b5586cbdc446547ab384d6b1054/Screenshot%202026-03-21%20001550.png)
 
-Machine Learning Pose Estimation using Computer Vision technique for tracking the movements of a person or an object, greatly aids in the development of automation processes and can enhance human-machine interaction in a variety of applications. The project focuses on MediaPipe hand tracking function based on high-performance palm detection and hand landmark model, OpenCV (Open-Source computer Vision) a Computer Vision, Machine Learning library supporting Python programming language, NLP (Natural Language Processing) and Numpy that helps maintaining an intuitive user experience while lowering latency and improving recognition accuracy. Within the fields of image processing and pattern recognition, air-based writing has become a fascinating and developing field of study that offers promising opportunities to improve human-computer interaction, a novel system that contributes voice typing and gesture control for writing in air. Furthermore, it incorporates gesture-based tracking. The dataset used in this project was selected especially for voice recognition and air-writing tasks. It combines voice samples recorded through an integrated microphone input with gesture-based inputs recorded via a webcam using the MediaPipe framework respectively. Evaluation is done by User accessibility, voice recognition capabilities, and gesture accuracy with MediaPipe's hand-tracking, gesture commands were highly accurate. Real-time responsiveness and low error rates were demonstrated by voice-to-text transcription. This efficacy for hands-free interaction was validated through usability testing. In conclusion, by offering a hands-free, interactive, and easily accessible platform for digital content creation, data representation and speech recognition, this project seeks to go beyond the constraints of current interaction technologies. The system expands on the idea of augmented reality, providing a rich medium for communication and real-time idea visualization.
 
-# Problem Identification
 
-Canvas makes it easy for instructors to manage digital materials, communications, and other aspects of instruction for their courses.
-Aims to improve the creative process by removing barriers and allowing artists to immerse themselves.
 
-1. Depth sensing is not possible:  Since depth sensing is not possible, up and down pen movements cannot be followed. Therefore, the fingertip's entire trajectory is traced, and the resulting image would be absurd and not recognized by the model.
-   
-2. Voice to text conversion:  Making the model versatile and technically independent, introducing multilingual text generation
+# The Problem 
+1. Noise with jitter makes trajectory tip unmanagable and sensitive.  
+2. Voice-to-text conversion:  Making the model versatile and technically independent, introducing multilingual text generation.
 
 
 # Objective
-1. The system offers clear hand gestures for real-time system control (Synchronization).
+1. Voice-to-text conversion through speech recognition.
 
-2. Voice to text conversion through speech recognition.
+# Technology Used
+1. Programming Language: Python
+2. Library: Numpy, Deque
+3. Machine Learning (ML) : Mediapipe
+4. Computer Vision (OpenCv)
+5. Natural Language Processing (NLP)-based Speech Recognition
 
+# Hardware Requirement 
+Camera, Screen.
+# Software Requirement
+Python, Media-Pipe, OpenCV, NumPy, Speech recognition.
 
-
-# How it Works?
+# Procedure
 ![image_alt](https://github.com/kriti0987/AirCanvas/blob/8e0a8c4ea0422447d1ea3200c9592e28b7e028f0/Screenshot%202026-03-21%20001649.png)
 1. A motion-to- digital converter, based on idea of drawing in air (like waving in air) focuses on hand gesture recognition with the use of computer vision using python programming language, creating a natural human-machine interaction. The system offers clear hand gestures for real-time system control (Synchronization). 
 
@@ -36,7 +39,7 @@ Aims to improve the creative process by removing barriers and allowing artists t
 
 7. Use machine learning algorithms to recognize and classify different gestures (mediapipe).
 
-8. Process the recognized gestures and trigger relevant actions or events. (NumPyand deque).
+8. Process the recognized gestures and trigger relevant actions or events. (NumPy and deque).
 
 9. Zero(0) degree angle gesture between Thumb and Indexfinger leads to stop drawing on specific location.
 
@@ -48,19 +51,7 @@ Aims to improve the creative process by removing barriers and allowing artists t
     
 13. Example, Online meets, educational purpose, artistic creativity. Canvas facilitates the management of digital resources, communications, and other course-related teaching elements for instructors aims to enhance the artistic process by lowering obstacles and enabling artists to fully engage 
 
-# Technology Used
-Python (Programming Language)
 
-Machine Learning (ML) : Mediapipe.
 
-Speech Recognition
 
-Numpy (Python)
-
-Natural Language Processing (NLP)
-
-# Hardware Requirement 
-Camera, Screen.
-# Software Requirement
-Python, Media-Pipe, OpenCV, NumPy, Speech recognition.
 
