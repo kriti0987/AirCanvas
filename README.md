@@ -25,6 +25,7 @@ Camera, Screen.
 
 The process is divided in six phases:
 1. Environment & Dependency Setup
+
    1.**Library Integration**: Install and import OpenCV (vision), MediaPipe (tracking), NumPy (matrices), and SpeechRecognition (audio).
    2. **Data Structure Design**: Initialize deques (double-ended queues) to store the (x, y) coordinates of the drawing. Used separate queues for different colors to keep the drawing persistent.
 
