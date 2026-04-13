@@ -1,5 +1,5 @@
 # AIR CANVAS (DRAW THROUGH HAND GESTURES)
-
+Multi-modal, real-time computer vision application that allows users to draw digitally in 3-D space using hand gestures, integrates Natural Language Processing (NLP)- based Speech Recognition to provide a hands-free user interface and 
 
 
 
