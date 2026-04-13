@@ -23,19 +23,39 @@ Camera, Screen.
 
 # Procedure
 
-The process is divided in six phases:
-1. **Environment & Dependency Setup**
+The process is divided in Five phases:
 
-   i. **Library Integration**: Install and import OpenCV (vision), MediaPipe (tracking), NumPy (matrices), and SpeechRecognition (audio).
+**Phase 1: Environment & UI Initialization**
 
-   ii. **Data Structure Design**: Initialize deques (double-ended queues) to store the (x, y) coordinates of the drawing. Used separate queues for different colors to keep the drawing persistent.
+1. Defining the Canvas: Creating a blank numpy array (paintWindow) to serve as your digital paper.UI Design: Programming the draw_ui function to place static buttons (Clear, Blue, Red, etc.) at the top of the frame.
    
-2. **Multimodal Input Handling**
+2. Data Structures: Using deque buffers to store the $(x, y)$ coordinates of your drawings for each color.
    
-   i. **The Voice Thread**: Implement threading to run the speech recognition in the background. If not use a separate thread, the video feed will "freeze" every time the AI listens to voice.
+**Phase 2: Computer Vision Integration (MediaPipe)**
 
-   ii. **Camera Initialization**: Set up the VideoCapture loop and handle frame flipping (mirroring) so that moving  hand right moves the cursor right.
+1. Hand Tracking: Integrating mp.solutions.hands to detect the 21 landmarks of the human hand in real-time.
+2. Landmark Isolation: Specifically targeting Landmark 8 (Index Finger Tip) for drawing and Landmark 4 (Thumb) to create a "pinch" or "proximity" trigger for the draw condition.
+   
+3. Input Smoothing: Implementing a smooth_buffer to average out the jitter from the camera feed, ensuring your lines look clean and not jagged.
+   
+**Phase 3: Natural Language Processing (Speech Recognition)**
 
+1. Multithreading: This is a critical step. By starting the listen_for_commands function in a separate threading.Thread, you ensure the camera feed doesn't freeze while the computer is "listening."
+   
+2. Command Parsing: Using the Google Speech API to convert audio into text strings like "red" or "clear," which then update the colorIndex globally.
+   
+**Phase 4: Main Loop & Drawing Logic**
+1. Input Processing: The while loop continuously captures camera frames, flips them for a natural "mirror" effect, and processes them through the MediaPipe model.
+   
+2. Interactive Controls: Logic that checks if your finger is over a UI button or if your hand posture matches the "drawing" state.
+   
+3. Rendering: Using cv2.line to connect all the saved points in your deques and display them on both the live camera feed and the white canvas.
+   
+**Phase 5: Optimization & Benchmarking**
+   
+1. Latency Tracking: Using time.time() to measure the exact processing cost of each frame.
+   
+3. Visualization: Using matplotlib to generate the Pulse and Bar charts that prove system runs
 
 
 
