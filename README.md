@@ -22,6 +22,7 @@ Multi-modal, real-time computer vision application that allows users to draw dig
 3. Machine Learning (ML) : Mediapipe
 4. Computer Vision (OpenCv)
 5. Natural Language Processing (NLP)-based Speech Recognition
+6. Matplotlib: To generate the Pulse and Bar charts that prove system runs
 
 # Hardware Requirement 
 Camera, Screen.
