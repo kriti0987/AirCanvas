@@ -68,9 +68,7 @@ The process is divided in Five phases:
 
 <img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/4393c3f9-3b38-4ab3-95d3-1e5147e675fc" />
 
-<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/38040ada-dd0e-49bc-92fe-00e4396ab3f1" />
-
-<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/29f47d6e-6ca8-4689-b26a-31249702e568" />
+<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/a3f7af4e-3a6a-47bd-b39d-57b382085f7d" />
 
 <img width="1000" height="600" alt="Image" src="https://github.com/user-attachments/assets/e016cfda-31bb-42d0-86ee-a2f0412b5c07" />
 
